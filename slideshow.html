@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> Slide Show! </title>
+</head>
+<img id="A" src=https://chico.ca.us/sites/main/files/imagecache/lightbox/main-images/dog_license.jpg height="300" width="500">
+<button onclick="myFunction(1)">Previous</button>
+<button onclick="myFunction(2)">Next</button>
+<script> 
+    let count = 0;
+    function myFunction(type)
+    {   
+        if(type==1)
+        {
+            if(count>0)
+            {
+                count = count - 1;
+            }
+            else
+            {
+                count = 4;
+            }
+            
+        }
+        else
+        {
+            if(count<4)
+            {
+                count = count + 1;
+            }
+            else
+            {
+                count = 0;
+            }
+            
+        }
+        var image_1 = "https://chico.ca.us/sites/main/files/imagecache/lightbox/main-images/dog_license.jpg";
+        var image_2 = "https://www.akc.org/wp-content/uploads/2017/11/Golden-Retriever-Puppy.jpg";
+        var image_3 = "https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=cbe66879ae8c0ac09975d945f39137f6";
+        var image_4 = "https://gardneranimalcarecenter.com/wp-content/uploads/2019/10/puppy-1082141_1280-min.jpg";
+        var image_5 = "https://www.rover.com/blog/wp-content/uploads/2019/06/bernese-mountain-dog-1024x680.jpg";
+        var dogs = [image_1, image_2, image_3, image_4, image_5];
+        document.getElementById("A").src = dogs[count];
+        
+    }
+</script> 
+</html>
