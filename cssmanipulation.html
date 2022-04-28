@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> CSS Manipulation </title>
+</head>
+<p id="A">This is test text! </p>
+<button onclick="myFunction(1)">Border: Red</button>
+<button onclick="myFunction(2)">Border: Green</button>
+<button onclick="myFunction(3)">Border: Blue</button>
+<button onclick="myFunction(4)">Background: Red</button>
+<button onclick="myFunction(5)">Background: Green</button>
+<button onclick="myFunction(6)">Background: Blue</button>
+<button onclick="myFunction(7)">Reset</button>
+<script> 
+    function myFunction(type)
+    {
+        var someTag = document.getElementById("A");
+        if(type==1)
+        {
+            someTag.style.color = "red";
+        }
+        else if(type==2)
+        {
+            someTag.style.color = "green";
+        }
+        else if(type==3)
+        {
+            someTag.style.color = "blue";
+        }
+        else if(type==4)
+        {
+            someTag.style.backgroundColor = "red";
+        }
+        else if(type==5)
+        {
+            someTag.style.backgroundColor = "green";
+        }
+        else if(type==6)
+        {
+            someTag.style.backgroundColor = "blue";
+        }
+        else
+        {
+            someTag.style.backgroundColor = "white";
+            someTag.style.color = "black";
+        }
+
+    }
+</script> 
+</html>

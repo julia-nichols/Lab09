@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Store </title>
+</head>
+<body>
+<form action="customerBackend.php" method="post"> 
+<p><input id="1" type="username"> (Username)</p>
+<p><input id="2" type="password" name="password"> (Password)</p>
+<fieldset>
+    <legend>Choose your items to buy:</legend>
+
+    <div>
+      <input type="checkbox" id="apples" name="apples">
+      <label for="apples">apples($1.00)</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="oranges" name="oranges">
+      <label for="oranges">oranges($1.50)</label>
+    </div>
+    <div>
+        <input type="checkbox" id="bananas" name="bananas">
+        <label for="bananas">bananas($2.00)</label>
+    </div>
+</fieldset>
+<p>Choose your shipping method:</p> 
+<input type="radio" name="shipping" value="Free 7 Day">Free 7 Day Shipping<BR>
+<input type="radio" name="shipping" value="$50 Overnight">$50 Overnight Shipping<BR>
+<input type="radio" name="shipping" value="$5 3 Day">$5 3 Day shipping<BR>
+<input type="submit">
+</form>
+</body>
+</html>
